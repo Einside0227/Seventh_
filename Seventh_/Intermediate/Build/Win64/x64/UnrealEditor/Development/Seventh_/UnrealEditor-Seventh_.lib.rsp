@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Seventh_.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\30166\Documents\GitHub\Seventh_\Seventh_\Intermediate\Build\Win64\x64\Seventh_Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"C:\Users\30166\Documents\GitHub\Seventh_\Seventh_\Intermediate\Build\Win64\x64\UnrealEditor\Development\Seventh_\Seventh_.cpp.obj"
+"C:\Users\30166\Documents\GitHub\Seventh_\Seventh_\Intermediate\Build\Win64\x64\UnrealEditor\Development\Seventh_\PerModuleInline.gen.cpp.obj"
+"C:\Users\30166\Documents\GitHub\Seventh_\Seventh_\Intermediate\Build\Win64\x64\UnrealEditor\Development\Seventh_\Default.rc2.res"
+/OUT:"C:\Users\30166\Documents\GitHub\Seventh_\Seventh_\Intermediate\Build\Win64\x64\UnrealEditor\Development\Seventh_\UnrealEditor-Seventh_.lib"
