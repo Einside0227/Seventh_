@@ -9,6 +9,7 @@
 class UCapsuleComponent;
 class USpringArmComponent;
 class UCameraComponent;
+struct FInputActionValue;
 
 UCLASS()
 class SEVENTH__API ASpartaPawn : public APawn
@@ -20,6 +21,7 @@ public:
 	ASpartaPawn();
 
 protected:
+#pragma region Components
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Test|Components")
 	UCapsuleComponent* CapsuleComponent;
 
@@ -31,6 +33,18 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
 	UCameraComponent* CameraComp;
+#pragma endregion
+#pragma region Move
+	UPROPERTY(EditAnywhere, Category = "Move")
+	float MoveSpeed = 500.f;
+
+	UPROPERTY(EditAnywhere, Category = "Move")
+	float TurnSpeed = 500.f;
+#pragma endregion
+
+	void Move(const FInputActionValue& Value);
+	void Look(const FInputActionValue& Value);
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
 };

@@ -8,6 +8,7 @@
 
 class USpringArmComponent;
 class UCameraComponent;
+struct FInputActionValue;
 
 UCLASS()
 class SEVENTH__API ASpartaCharacter : public ACharacter
@@ -15,7 +16,6 @@ class SEVENTH__API ASpartaCharacter : public ACharacter
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this character's properties
 	ASpartaCharacter();
 
 protected:
@@ -25,5 +25,7 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
 	UCameraComponent* CameraComp;
 
+protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
 };
